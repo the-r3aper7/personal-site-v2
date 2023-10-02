@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+	background-color: #0e0e0e;
+	background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23818181' fill-opacity='0.11' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
 .glass {
 	@apply bg-black bg-opacity-5 backdrop-blur-sm;
 }
@@ -10,7 +15,18 @@
 	@apply px-6 py-4;
 }
 
-body {
-	background-color: #0e0e0e;
-	background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23818181' fill-opacity='0.11' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+.btn {
+	@apply hover:bg-gray-900 border-2 border-gray-600 p-3;
+}
+
+.smooth-transition {
+	@apply transition ease-in-out duration-300;
+}
+
+.margin-content {
+	@apply max-w-7xl mx-auto
+}
+
+.text-gradient-color {
+	background-image: linear-gradient(to right, white 50%, #555555);
 }

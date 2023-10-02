@@ -8,20 +8,15 @@
 </script>
 
 <header class="glass sticky z-20 top-0 text-white text-opacity-80 w-full">
-	<div class="max-w-7xl mx-auto">
+	<div class="margin-content">
 		<div class="padded-content flex items-center justify-between relative h-20">
 			<a href="/" class="flex items-center gap-x-2">
-				<img
-					src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg"
-					alt="svelte logo"
-					width="32"
-				/>
-				<p class="hidden md:block text-3xl font-bold">Sai Srikar Dumpeti</p>
+				<p class="md:hidden text-3xl font-bold bg-clip-text text-transparent text-gradient-color">SSD</p>
+				<p class="hidden md:block text-3xl font-bold bg-clip-text text-transparent text-gradient-color">Sai Srikar Dumpeti</p>
 			</a>
 			<div class="hidden md:flex md:gap-x-16">
 				<a href="/">Home</a>
-				<a href="/">Blog</a>
-				<a href="/">About Me</a>
+				<a href="/blog">Blog</a>
 			</div>
 			<div class="md:hidden">
 				<button on:click={mobileHeaderToggle}>
@@ -39,10 +34,13 @@
 				isMobileHeaderOpen ? 'hidden' : ''
 			} glass md:hidden block absolute min-h-fit rounded-b-lg py-6`}
 		>
-			<ul class="flex flex-col items-center gap-y-2">
-				<li><a href="/home">Home</a></li>
-				<li><a href="/blog">Blog</a></li>
-				<li><a href="/about-me">AboutMe</a></li>
+			<ul class="flex flex-col items-center gap-y-2 w-screen">
+				<li>
+					<a href="/">Home</a>
+				</li>
+				<li>
+					<a href="/blog" class="p-2">Blog</a>
+				</li>
 			</ul>
 		</div>
 	</div>

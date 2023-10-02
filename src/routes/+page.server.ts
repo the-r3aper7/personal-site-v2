@@ -1,12 +1,12 @@
-import type { Load, ServerLoadEvent } from '@sveltejs/kit';
+import type { ServerLoadEvent } from '@sveltejs/kit';
+import type { Config } from '@sveltejs/adapter-vercel';
 
 export const prerender = true;
 
-// export function load() {
-//   return {
-//     answer: 42
-//   };
-// }
+
+export const config: Config = {
+	runtime: 'edge',
+};
 
 export async function load(event: ServerLoadEvent) {
 	const request = await fetch('https://api.github.com/users/the-r3aper7/repos');
