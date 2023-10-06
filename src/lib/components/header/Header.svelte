@@ -1,5 +1,4 @@
 <script lang="ts">
-	
 	import { IconMenu2, IconX } from '@tabler/icons-svelte';
 	import logo from '$lib/assets/website-logo.png';
 	import Image from '../shared/Image.svelte';
@@ -8,21 +7,20 @@
 
 	let navItems = [
 		{
-			id: "nav-items-1",
-			title: "Home",
-			link: "/"
+			id: 'nav-items-1',
+			title: 'Home',
+			link: '/'
 		},
 		{
-			id: "nav-items-2",
-			title: "Blog",
-			link: "/blog"
-		},
-	]
+			id: 'nav-items-2',
+			title: 'Blog',
+			link: '/blog'
+		}
+	];
 
 	function mobileHeaderToggle() {
 		isMobileHeaderOpen = !isMobileHeaderOpen;
 	}
-
 </script>
 
 <header class="glass sticky z-20 top-0 text-opacity-80 w-full">
@@ -37,7 +35,7 @@
 				</p>
 			</a>
 			<div class="hidden md:flex md:gap-x-8">
-				{#each navItems as navItem (navItem.id) }
+				{#each navItems as navItem (navItem.id)}
 					<a href={navItem.link}>{navItem.title}</a>
 				{/each}
 			</div>
@@ -60,7 +58,7 @@
 			} glass md:hidden block absolute min-h-fit rounded-b-lg py-6`}
 		>
 			<ul class="flex flex-col items-center gap-y-2 w-screen">
-				{#each navItems as navItem (navItem.id) }
+				{#each navItems as navItem (navItem.id)}
 					<li>
 						<a href={navItem.link}>{navItem.title}</a>
 					</li>
