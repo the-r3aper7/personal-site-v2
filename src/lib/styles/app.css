@@ -9,11 +9,11 @@ body {
 }
 
 .glass {
-	@apply bg-black bg-opacity-5 backdrop-blur-lg;
+	@apply bg-black bg-opacity-10 backdrop-blur-lg;
 }
 
 .glass-white {
-	@apply bg-white bg-opacity-10 backdrop-blur-md;
+	@apply bg-white bg-opacity-10 backdrop-blur-lg;
 }
 
 .padded-content {

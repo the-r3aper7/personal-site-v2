@@ -1,7 +1,8 @@
 <script lang="ts">
+	
+	import { IconArrowUpRight } from '@tabler/icons-svelte';
 	import Image from '$lib/components/shared/Image.svelte';
 
-	import { IconArrowUpRight } from '@tabler/icons-svelte';
 </script>
 
 <section class="min-h-screen">

@@ -1,4 +1,5 @@
 <script lang="ts">
+
 	import { IconArrowUpRight } from '@tabler/icons-svelte';
 	import pythonlogo from '$lib/assets/logos/python.png';
 	import htmllogo from '$lib/assets/logos/html.png';
@@ -77,6 +78,7 @@
 			description: 'Currently learning this language.'
 		}
 	];
+	
 </script>
 
 <section class="margin-content flex flex-col min-h-screen gap-y-12">

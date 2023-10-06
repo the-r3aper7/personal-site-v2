@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Image from '../shared/Image.svelte';
-	import { goto } from '$app/navigation';
 	export let image: string = '';
 	export let title: string;
 	export let publishedOn: string;

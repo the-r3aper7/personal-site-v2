@@ -61,7 +61,7 @@
 .blog img {
 	background-color: var(--blog-background-color);
 	height: 720px;
-	@apply max-w-full rounded-2xl object-cover w-full;
+	@apply max-w-full rounded-2xl object-cover w-full h-64 md:h-[720px];
 }
 
 .blog p > code {
