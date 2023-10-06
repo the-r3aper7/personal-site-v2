@@ -1,3 +1,20 @@
-<section class="flex flex-col items-center justify-center min-h-screen text-white">
-    <h1 class="text-9xl font-bold ">WIP</h1>
+<script lang="ts">
+    import PostCard from "$lib/components/blog-components/PostCard.svelte"
+    export let data
+</script>
+
+<section class="flex min-h-screen">
+    
+    {#if data.posts}
+        <div class="flex gap-4">
+            {#each data.posts as post (post.id)}
+            <PostCard {...post} />
+            {/each}
+        </div>
+    {/if}
+
+    {#if data.error}
+        {data.error}
+    {/if}
+    
 </section>

@@ -3,14 +3,14 @@ import type { Config } from '@sveltejs/adapter-vercel';
 
 export const prerender = true;
 
-
 export const config: Config = {
 	runtime: 'edge',
 };
 
 export async function load(event: ServerLoadEvent) {
+	
 	const request = await fetch('https://api.github.com/users/the-r3aper7/repos');
-
+	
 	if (!request.ok) {
 		return {
 			success: false,
@@ -37,6 +37,6 @@ export async function load(event: ServerLoadEvent) {
 
 	return {
 		success: true,
-		data: data
+		data,
 	};
 }

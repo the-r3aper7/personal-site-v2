@@ -1,0 +1,74 @@
+:root {
+  --blog-background-color: #22272e
+}
+
+.blog {
+	@apply space-y-4
+}
+
+.blog h1 {
+  @apply text-3xl lg:text-5xl font-semibold;
+}
+
+.blog h2 {
+  @apply text-2xl lg:text-4xl font-medium;
+}
+
+.blog h3 {
+  @apply text-xl lg:text-3xl;
+}
+
+.blog blockquote {
+  background-color: var(--blog-background-color);
+  border-left: 10px solid white;
+  @apply py-2 px-4
+}
+
+.blog ul,
+.blog ol {
+  @apply my-4 ml-10 list-disc ;
+}
+
+.blog ol {
+  @apply list-decimal;
+}
+
+.blog li {
+  @apply my-1 pl-2;
+}
+
+.blog li::marker,
+.blog li::-webkit-details-marker {
+  @apply font-extrabold
+}
+
+.blog ul[class='contains-task-list'] {
+  @apply ml-0 list-none
+}
+
+.blog li[class='task-list-item'] {
+  @apply pl-0
+}
+
+.blog a {
+  @apply text-blue-500 hover:text-blue-600 hover:underline
+}
+
+.blog hr {
+  @apply h-px border border-gray-700
+}
+
+.blog img {
+  background-color: var(--blog-background-color);
+  height: 720px;
+  @apply max-w-full rounded-lg object-cover w-full
+}
+
+.blog p > code {
+  background-color: var(--blog-background-color);
+  @apply p-1 rounded-md border-b-2 border-gray-400
+}
+
+.copy-button {
+  @apply absolute top-3 right-3 bg-black bg-opacity-20  backdrop-blur-md px-2 py-1 rounded-lg font-semibold hover:bg-opacity-10 cursor-pointer
+}

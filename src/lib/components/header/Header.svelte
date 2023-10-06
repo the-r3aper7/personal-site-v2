@@ -1,5 +1,8 @@
 <script lang="ts">
 	import { IconMenu2, IconX } from '@tabler/icons-svelte';
+	import logo from "$lib/assets/logo.png"
+	import Image from '../shared/Image.svelte';
+
 	let isMobileHeaderOpen = true;
 
 	function mobileHeaderToggle() {
@@ -7,11 +10,11 @@
 	}
 </script>
 
-<header class="glass sticky z-20 top-0 text-white text-opacity-80 w-full">
+<header class="glass sticky z-20 top-0 text-opacity-80 w-full">
 	<div class="margin-content">
 		<div class="padded-content flex items-center justify-between relative h-20">
 			<a href="/" class="flex items-center gap-x-2">
-				<p class="md:hidden text-3xl font-bold bg-clip-text text-transparent text-gradient-color">SSD</p>
+				<Image alt="SSD" src={logo} width="42px" className="rounded-md" />
 				<p class="hidden md:block text-3xl font-bold bg-clip-text text-transparent text-gradient-color">Sai Srikar Dumpeti</p>
 			</a>
 			<div class="hidden md:flex md:gap-x-16">
