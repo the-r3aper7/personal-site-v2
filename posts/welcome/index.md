@@ -19,22 +19,23 @@ employees
 ```
 
 ```js
-console.log("Hello World")
+console.log('Hello World');
 ```
 
-| Tables   |      Are      |  Cool |
-|----------|--------------:|------:|
+| Tables   |           Are |  Cool |
+| -------- | ------------: | ----: |
 | col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
+| col 2 is |      centered |   $12 |
 | col 3 is | right-aligned |    $1 |
 
-
 # H1
+
 ## H2
+
 ### H3
 
 **bold text**
-*italic text*
+_italic text_
 [title](https://www.vercel.com)
 Hello World
 
@@ -44,24 +45,24 @@ Hello World
 2. Second item
 3. Third item
 4. Fourth item
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
+5. First item
+6. Second item
+7. Third item
+8. Fourth item
+9. First item
+10. Second item
+11. Third item
+12. Fourth item
+13. First item
+14. Second item
+15. Third item
+16. Fourth item
 
 - First item
 - Second item
 - Third item
-    - Indented item
-    - Indented item
+  - Indented item
+  - Indented item
 - Fourth item
 
 ---

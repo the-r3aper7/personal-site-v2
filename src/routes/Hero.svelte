@@ -1,14 +1,17 @@
 <script lang="ts">
-	import Image from "$lib/components/shared/Image.svelte";
+	import Image from '$lib/components/shared/Image.svelte';
 
-
-	import { IconArrowUpRight } from "@tabler/icons-svelte";
-
+	import { IconArrowUpRight } from '@tabler/icons-svelte';
 </script>
 
 <section class="min-h-screen">
 	<div class="flex flex-col items-center py-64 gap-y-10">
-		<Image src={"https://github.com/the-r3aper7.png"} width="196px" className="rounded-full" alt="Sai Srikar Dumpeti"/>
+		<Image
+			src={'https://github.com/the-r3aper7.png'}
+			width="196px"
+			className="rounded-full"
+			alt="Sai Srikar Dumpeti"
+		/>
 		<div class="space-y-8">
 			<h1 class="text-2xl text-center">Hi, I'm Sai Srikar Dumpeti 👋🏻</h1>
 

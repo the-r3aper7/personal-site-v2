@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { IconMenu2, IconX } from '@tabler/icons-svelte';
-	import logo from "$lib/assets/logo.png"
+	import logo from '$lib/assets/website-logo.png';
 	import Image from '../shared/Image.svelte';
 
 	let isMobileHeaderOpen = true;
@@ -15,7 +15,11 @@
 		<div class="padded-content flex items-center justify-between relative h-20">
 			<a href="/" class="flex items-center gap-x-2">
 				<Image alt="SSD" src={logo} width="42px" className="rounded-md" />
-				<p class="hidden md:block text-3xl font-bold bg-clip-text text-transparent text-gradient-color">Sai Srikar Dumpeti</p>
+				<p
+					class="hidden md:block text-3xl font-bold bg-clip-text text-transparent text-gradient-color"
+				>
+					Sai Srikar Dumpeti
+				</p>
 			</a>
 			<div class="hidden md:flex md:gap-x-16">
 				<a href="/">Home</a>

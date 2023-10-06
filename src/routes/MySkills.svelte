@@ -81,10 +81,14 @@
 
 <section class="margin-content flex flex-col min-h-screen gap-y-12">
 	<h1 class="text-5xl font-semibold mx-auto">My Skills</h1>
-	<div class="flex flex-wrap justify-center gap-4 ">
+	<div class="flex flex-wrap justify-center gap-4">
 		{#each skills as skill (skill.id)}
 			<div class="skill-card px-4 space-y-4 pt-44 group">
-				<Image src={skill.img} alt={skill.lang} className="object-contain h-11 w-11 grayscale smooth-transition group-hover:grayscale-0" />
+				<Image
+					src={skill.img}
+					alt={skill.lang}
+					className="object-contain h-11 w-11 grayscale smooth-transition group-hover:grayscale-0"
+				/>
 				<p class="font-medium text-xl inline-flex justify-between items-center w-full">
 					{skill.name}
 					<a href={`https://github.com/the-r3aper7?tab=repositories&language=${skill.lang}`}
@@ -98,7 +102,7 @@
 </section>
 
 <style lang="postcss">
-  .skill-card {
+	.skill-card {
 		@apply h-96 w-[318px] bg-neutral-800 border border-gray-600;
 	}
 </style>
