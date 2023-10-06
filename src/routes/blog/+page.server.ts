@@ -1,4 +1,4 @@
-import { getAllPosts } from "$lib/blog-utils/get-all-posts";
+import { getAllPosts } from "$lib/blog/get-all-posts";
 import type { ServerLoadEvent } from "@sveltejs/kit";
 import { log } from "console";
 

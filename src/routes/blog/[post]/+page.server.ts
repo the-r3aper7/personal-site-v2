@@ -1,4 +1,4 @@
-import { getPostData } from "$lib/blog-utils/get-post-data";
+import { getPostData } from "$lib/blog/get-post-data";
 import type { PageServerLoad } from "./$types";
 
 export const load: PageServerLoad = async ({params}) => {

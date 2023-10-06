@@ -1,7 +1,7 @@
 import { readFile, readdir } from "node:fs/promises"
 import path from "node:path"
 import matter from "gray-matter"
-import { convertMarkdownToHtml } from "./markdown/convert-markdown-html";
+import { convertMarkdownToHtml } from "./markdown-utils/convert-markdown-html";
 
 interface PostType {
   id: string;
