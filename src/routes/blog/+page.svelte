@@ -3,6 +3,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>Blogs</title>
+</svelte:head>
+
 <section class="margin-content flex flex-col min-h-screen gap-y-12 my-16">
 	<div class="flex flex-wrap justify-center gap-4">
 		{#if data.posts}

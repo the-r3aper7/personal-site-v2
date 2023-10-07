@@ -49,6 +49,11 @@
 	});
 </script>
 
+<svelte:head>
+	<title>{data.post.title} - Blog</title>
+	<meta name="description" content={data.post.description}>
+</svelte:head>
+
 <section class="blog">
 	<BlogHero image={data.post.image} title={data.post.title} publishedOn={data.post.publishedOn} />
 

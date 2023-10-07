@@ -1,7 +1,6 @@
 export type Frontmatter = {
 	title: string;
+	image: string;
+	publishedOn: string;
 	description: string;
-	slug: string;
-	published: string;
-	category: string;
 };

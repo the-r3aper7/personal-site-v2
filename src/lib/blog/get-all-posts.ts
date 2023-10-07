@@ -1,9 +1,10 @@
 import { readFile, readdir } from 'node:fs/promises';
-import path from 'node:path';
 import matter from 'gray-matter';
+import {postsPath} from "$lib/config"
 import { convertMarkdownToHtml } from './markdown-utils/convert-markdown-html';
+import { parseMarkdownData } from './markdown-utils/get-markdown-data';
 
-interface PostType {
+type PostType = {
 	id: string;
 	title: string;
 	content: string;
@@ -13,34 +14,27 @@ interface PostType {
 	description: string;
 }
 
-interface FrontMatter {
-	title: string;
-	image: string;
-	publishedOn: string;
-	description: string;
-}
-
 export const getAllPosts = async () => {
 	const posts = new Array<PostType>();
 
 	try {
-		const postsPath = path.resolve('posts');
 		const folders = await readdir(postsPath);
 
 		for (const folder of folders) {
 			const markdownData = await readFile(`${postsPath}/${folder}/index.md`, 'utf-8');
-			const { data, content } = matter(markdownData);
+			
+			const {frontmatter, content}  = parseMarkdownData(markdownData)
 
 			const converted = await convertMarkdownToHtml(content);
 
 			posts.push({
 				id: `post-${folder}`,
-				title: data.title,
+				title: frontmatter.title,
 				content: converted,
 				link: `/blog/${folder}`,
-				description: data.description,
-				image: data.image,
-				publishedOn: data.publishedOn
+				description: frontmatter.description,
+				image: frontmatter.image,
+				publishedOn: frontmatter.publishedOn
 			});
 		}
 
