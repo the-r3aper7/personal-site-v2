@@ -1,5 +1,4 @@
 import { readFile, readdir } from 'node:fs/promises';
-import matter from 'gray-matter';
 import {postsPath} from "$lib/config"
 import { convertMarkdownToHtml } from './markdown-utils/convert-markdown-html';
 import { parseMarkdownData } from './markdown-utils/get-markdown-data';

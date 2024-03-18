@@ -43,7 +43,7 @@
 		},
 		{
 			id: 'my-skills-5',
-			name: 'Golang',
+			name: 'Go',
 			lang: 'go',
 			img: gologo,
 			description: 'Basic understanding of language like concurrency and created a project.'
@@ -74,7 +74,7 @@
 			name: 'Rust',
 			lang: 'rust',
 			img: rustlogo,
-			description: 'Currently learning this language.'
+			description: 'Wants to learn this language.'
 		}
 	];
 </script>
@@ -103,6 +103,6 @@
 
 <style lang="postcss">
 	.skill-card {
-		@apply h-96 w-[318px] bg-neutral-800 border border-gray-600;
+		@apply h-96 w-[318px] bg-neutral-800 border border-gray-600 rounded;
 	}
 </style>

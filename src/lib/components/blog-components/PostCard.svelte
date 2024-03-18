@@ -7,13 +7,13 @@
 	export let link: string;
 </script>
 
-<div class="skill-card p-4 group space-y-4" data-sveltekit-preload-code="hover">
+<div class="post-card p-4 group space-y-4" data-sveltekit-preload-code="hover">
 	{#if image !== ''}
 		<a href={link}>
 			<Image
 				src={image}
 				alt={`${title}-image`}
-				className="object-cover max-h-40 w-full grayscale smooth-transition group-hover:grayscale-0 rounded-xl"
+				className="object-cover max-h-40 w-full grayscale smooth-transition group-hover:grayscale-0 rounded"
 			/>
 		</a>
 	{:else}
@@ -29,7 +29,7 @@
 </div>
 
 <style lang="postcss">
-	.skill-card {
-		@apply h-96 w-80 bg-neutral-800 border border-gray-600 rounded-xl;
+	.post-card {
+		@apply h-96 w-80 bg-neutral-800 border border-gray-600 rounded;
 	}
 </style>

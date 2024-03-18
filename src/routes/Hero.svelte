@@ -15,7 +15,7 @@
 			<h1 class="text-2xl text-center">Hi, I'm Sai Srikar Dumpeti 👋🏻</h1>
 
 			<div
-				class="text-4xl font-medium gap-y-2 bg-clip-text text-gradient-color text-transparent w-fit"
+				class="text-4xl font-medium gap-y-2 bg-clip-text text-gradient-color text-transparent w-fit pb-6"
 			>
 				<p class="text-center">Exploring OSS</p>
 				<p class="text-center">Love Playing Games</p>
